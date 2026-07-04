@@ -9,6 +9,18 @@ struct No{
      : valor( conteudo)
      prox (nullptr){}
 };
+
+struct Na {
+    // aqui seria o valor do nó 
+    string pergunta;
+    Na* filhoSim;
+    Na* filhoNao;
+    Lista* recomendacoes;
+    bool ehFolha;
+   //  a função do ehFolha é para determinar quando vai ocorrer a impressão dos itens
+
+
+}
  class Conteudo {
 
   private:
@@ -109,5 +121,23 @@ class Lista {
   
 
    }
+
+}
+
+class Arvore {
+  private:
+    Na* raiz;
+  public:
+    Arvore (){
+    raiz = nullptr;
+    } 
+
+  void criarArvore(){
+    Na* raiz = new Na{"Prefere Filme ou Série"}
+
+      
+  };
+  void recomendar(){};
+
 
 }
