@@ -3,12 +3,12 @@
 using namespace std;
 
 struct No{
-   Conteudo valor;
+   Conteudo dado;
    No* prox;
    No(Conteudo conteudo)
-     : valor = conteudo
-     prox =  nullptr {}
-}
+     : valor( conteudo)
+     prox (nullptr){}
+};
  class Conteudo {
 
   private:
@@ -50,6 +50,9 @@ struct No{
      cout << "-------------------------------------";
 
    }
+  string getNome(){
+      return nome;
+  }
 }
 
 class Lista {
@@ -85,9 +88,26 @@ class Lista {
       aux = aux->prox
      }
 
- }
-   void Lista::remover(Conteudo conteudo){
-      
+  void Lista::remover(string nome){
+ // a ista SE funciona no início, que aponta para os nos e o ultimo aponta para nullptr
+    string Deletado;
+    No* atual = ício;
+    No* anterior - nullptr;
+    No* Aux = atual->prox;
+
+    cout << "Digite o nome do filme a ser removido:";
+    cin >> Deletado;
+
+    while (Aux != nullptr){
+   // ou seja, até que o no seja o ultimo da lista
+    if (aux->dado.getNome() == deletado){
+         cout << "Encontrado";
+         break;
+  } 
+    Aux  = aux->prox;
+}
+  
+
    }
 
 }
